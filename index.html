@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="uft-8">
+
+<head>
+ <link rel="stylesheet" href="sytle.css">
+ <title>From practice</title>
+ <h1>OAT Part-Fill Log Maker</h1>
+
+</head>
+
+
+
+<body>
+
+<!-- Patient information - Mandatory  -->
+<form action="">
+	<p> Patient Initial * <br/>
+		<input type="text" name="patientInitial" size="15"
+		maxlength="20" />
+	</p>
+</form>
+
+<form action="">
+	<p> PHN  <br/>
+		<input type="text" name="PHN" size="15"
+		maxlength="20" />
+	</p>
+</form>
+
+<!-- Treatment type -->
+
+<form id ="treatmentType" action="">
+	<p> Treatment Type *  <br/>
+		<select name="treatmentType">
+			<option value ="Metadose">Metadose</option>
+			<option value ="Metadol-D">Metadol-D</option>
+			<option value ="Kadian">Kadian</option>
+			<option value ="Suboxone">Suboxone</option>
+		</select>	
+	</p>
+</form>
+
+
+
+<!-- Start date - end date -->
+<form action="" methaod="post">
+	<label for "startdate">Start Date *</label> <br/>
+	<input type="date" name="start"/>
+</form>
+
+
+<!-- Start date - end date -->
+<form action="" methaod="post">
+	<label for "startdate">End Date *</label> <br/>
+	<input type="date" name="end"/>
+</form>
+
+
+# of Witness Dose/Week *
+<form id ="witnumber" action="">
+	<p> # of Witnessed Dose/Week *  <br/>
+		<select name="witnumber">
+			<option value ="Daily">Daily</option>
+			<option value ="Carry">Carry</option>
+		</select>	
+	</p>
+</form>
+
+
+
+<!-- Witness day form -->	
+ <form id="witdays" action="">
+ 	<p>Please select the witness days
+ 		<br/>
+ 		<input type="checkbox" name="days"
+ 			value="Sunday" checked="checked" /> Sunday <br/>
+ 		<input type="checkbox" name="days"
+ 			value="Monday" checked="checked" /> Monday <br/>
+		<input type="checkbox" name="days"
+ 			value="Tuesday" checked="checked" /> Tuesday <br/>
+ 		<input type="checkbox" name="days"
+ 			value="Wednesday" checked="checked" /> Wednesday <br/>
+		<input type="checkbox" name="days"
+ 			value="Thursday" checked="checked" /> Thursday <br/>
+ 		<input type="checkbox" name="days"
+ 			value="Friday" checked="checked" /> Friday <br/>
+		<input type="checkbox" name="days"
+ 			value="Saturday" checked="checked" /> Saturday <br/>
+ 		
+ 		
+ 	</p>
+
+
+<!-- !-- FOLIO - Mandatory  -->
+<form action="">
+	<p> FOLIO * <br/>
+		<input type="text" name="polio" size="15"
+		maxlength="20" />
+	</p>
+</form>
+
+<form action="">
+	<p>Additional Note </p>
+	<textarea name="coments" cols="20" rows="4">Please enter patient specific information</textarea>
+
+</form>
+
+
+<form action="">
+	<p> 
+	<input type="checkbox" name="reference"
+			value="reference" checked="unchecked" /> Inculude OAT Reference Page
+	</p>
+</form>
+
+
+
+
+</body>
+
+</html>
+
